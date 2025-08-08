@@ -1,0 +1,204 @@
+/* Modern, clean, and professional About page styling for FoodFrenzy */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 48px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff4b2b;
+  margin-bottom: 0.5em;
+}
+
+.content p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2em auto;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.contactInfo {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactInfo .box {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: #292929;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s;
+}
+.contactInfo .box:hover {
+  box-shadow: 0 4px 24px 0 rgba(255,75,43,0.12);
+}
+
+.contactInfo .icon {
+  background: #ff4b2b;
+  color: #fff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px 0 rgba(255,75,43,0.15);
+}
+
+.contactInfo .text h3 {
+  margin: 0 0 4px 0;
+  color: #ff4b2b;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contactInfo .text p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.contactInfo .txt {
+  margin-top: 32px;
+  font-weight: 600;
+  color: #fff;
+  border-left: 4px solid #ff4b2b;
+  padding-left: 12px;
+  font-size: 1.2rem;
+}
+
+.sci {
+  display: flex;
+  gap: 18px;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.sci li a:hover {
+  color: #ff4b2b;
+  transform: scale(1.15);
+}
+
+.contactForm {
+  flex: 1 1 340px;
+  background: #292929;
+  border-radius: 16px;
+  padding: 36px 28px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  position: relative;
+  z-index: 1;
+}
+.contactForm h2 {
+  color: #ff4b2b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.contactForm form .inputBox {
+  margin-bottom: 18px;
+  position: relative;
+}
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: #232526;
+  border: 1.5px solid #444;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  transition: border 0.2s;
+  resize: none;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 1.5px solid #ff4b2b;
+  outline: none;
+}
+.contactForm span {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  color: #aaa;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.contactForm input:focus ~ span,
+.contactForm input:not(:placeholder-shown) ~ span,
+.contactForm textarea:focus ~ span,
+.contactForm textarea:not(:placeholder-shown) ~ span {
+  top: -16px;
+  left: 4px;
+  color: #ff4b2b;
+  font-size: 0.9rem;
+  background: #292929;
+  padding: 0 4px;
+}
+.contactForm input[type="submit"] {
+  background: linear-gradient(90deg, #ff4b2b 0%, #ff416c 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  padding: 12px 0;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.contactForm input[type="submit"]:hover {
+  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .contactInfo, .contactForm {
+    width: 100%;
+    min-width: 0;
+  }
+  .contactForm {
+    padding: 28px 12px;
+  }
+}

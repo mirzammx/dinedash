@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Add Admin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" th:href="@{/css/About.css}" />
+	<link rel="stylesheet" th:href="@{/css/Add_Admin.css}" />
+</head>
+
+<body>
+	<a href="/admin/services" class="back-link">Back to Services</a>
+	<div class="addAdmin">
+		<h3>ADD NEW ADMIN/PARTNER</h3>
+		<form th:action="@{/addingAdmin}" method="post">
+			<label for="adminName">Admin Name:</label>
+			<input type="text" id="adminName" name="adminName" placeholder="Enter name..." minlength="2" required />
+			<label for="adminEmail">Admin Email:</label>
+			<input type="email" id="adminEmail" name="adminEmail" placeholder="Enter email..." required />
+			<label for="adminNumber">Admin Number:</label>
+			<input type="tel" id="adminNumber" name="adminNumber" placeholder="Enter 10 digit mobile number..." pattern="[0-9]{10}" required />
+			<input type="hidden" name="adminPassword" value="1234" />
+			<button type="submit">Add Admin</button>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>FoodFrenzy</title>
+    <link rel="icon" type="image/x-icon" href="./Images/logo.png">
+display: flex; 
+justify-content: center; 
+align-items: center;
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" th:href="@{/css/About.css}" />
+
+</head>
+<body>
+    <nav th:replace="~{Navigation::navbar()}"></nav>
+<section class="contact"> 
+ <div class="content"> 
+ <h2>Contact Us</h2>  
+ <p>FoodFrenzy is a web-based application designed to revolutionize food industry management. With its intuitive interface, it streamlines operations by seamlessly managing customer data, inventory, and orders. This comprehensive solution ensures efficient decision-making and provides accessibility from any device, enhancing productivity in the dynamic food business landscape.
+</p>
+ </div> 
+ <div class="container"> 
+<div class="contactInfo"> 
+ <div class="box"> 
+<div class="icon"><b></b><i class="fa-sharp fa-solid fa-location-dot"></i></div> 
+<div class="text"> 
+ <h3>Address</h3> 
+ <p>A-142,Sector 92,<br>Noida,<br>22545521</p>
+ </div>
+  </div> 
+   <div class="box"> 
+<div class="icon"><b></b><i class="fa-solid fa-phone"></i></div> 
+<div class="text"> 
+ <h3>Phone</h3> 
+ <p>8299173654</p>
+ </div>
+  </div> 
+  <div class="box"> 
+<div class="icon"><b></b><i class="fa-solid fa-envelope"></i></div> 
+<div class="text"> 
+ <h3>Email</h3> 
+ <p>jkudo87@gmail.com</p>
+ </div>
+  </div> 
+<div class="contactForm">
+	<form>
+		<h2>Send Message</h2>
+		<div class="inputBox">
+			<input type="text" name="" required="required" placeholder=" " />
+			<span>Full Name</span>
+		</div>
+		<div class="inputBox">
+			<input type="email" name="" required="required" placeholder=" " />
+			<span>Email</span>
+		</div>
+		<div class="inputBox">
+			<textarea required="required" placeholder=" "></textarea>
+			<span>Type your message...</span>
+		</div>
+		<div class="inputBox">
+			<input type="submit" value="Send" />
+		</div>
+	</form>
+</div>
+<h2 class="txt">Connect with us</h2>
+<ul class="sci">  
+	<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li> 
+	<li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li> 
+	<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
+	<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+</ul>
+ </div>  
+ </div>
+ </section>
+</body>
+</html>
