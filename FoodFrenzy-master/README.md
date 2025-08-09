@@ -1,5 +1,5 @@
-# FoodFrenzy
-FoodFrenzy is a comprehensive system designed for managing customers, inventory, and orders. It offers secure authentication, role-based access control, and database integration using MySQL. Built with Spring Boot and Thymeleaf, the application provides a seamless experience for admin and staff members.
+# DineDash
+DineDash is a comprehensive system designed for managing customers, inventory, and orders. It offers secure authentication, role-based access control, and database integration using MySQL. Built with Spring Boot and Thymeleaf, the application provides a seamless experience for admin and staff members.
 
 ![Screenshot 2024-10-02 123332](https://github.com/user-attachments/assets/1382d32f-3cbb-40c3-b6b5-9fc55cd5176f)
 
@@ -38,12 +38,12 @@ Before running this project, ensure you have the following installed:
 <a/>
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repository-url/FoodFrenzy.git
+    git clone https://github.com/your-repository-url/DineDash.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd FoodFrenzy
+    cd DineDash
     ```
 
 3. Configure MySQL Database:
@@ -65,7 +65,7 @@ Before running this project, ensure you have the following installed:
     - Navigate to `http://localhost:8080` in your browser. 
 ## Website Screenshot
 
-Here is a preview of the FoodFrenzy interface:
+Here is a preview of the DineDash interface:
 
 ![Screenshot 2025-05-19 143351](https://github.com/user-attachments/assets/3e34f54c-c986-42ac-96a4-ed7ad18035a6)
 ![Screenshot 2025-05-19 143427](https://github.com/user-attachments/assets/a4046d4e-8c3d-4629-8913-5543d709e80e)
